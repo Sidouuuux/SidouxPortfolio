@@ -1,0 +1,84 @@
+// COLORS //////////////////////////////////
+
+//// new bg-colors
+$bgco-dark: #132620;
+$bgco-dark--lighter: #295245;
+
+$bgco-light: #132620;
+$bgco-light--darker: #7b6f71;
+
+$bgco-action--primary: #132620;
+$bgco-action--secondary: #fcdab7;
+
+//Font colors
+$fco-light: #ffffff;
+$fco-light--darker: #b68d40;
+
+$fco-dark: #b68d40;
+$fco-dark--lighter: #ffffff;
+
+$fco-special--light: #ffffff;
+$fco-special--dark: #b68d40;
+
+// SHADOWS //////////////////////////////////
+
+$b-shadow-normal: 0rem 0.5rem 0.5rem #00000040;
+$b-shadow-special: 0rem 0.7rem 0.7rem #00000040;
+$b-shadow-active: 0rem 0.3rem 0.3rem #00000040;
+
+// SPACING //////////////////////////////////
+
+// paddings
+
+$padding-1: 0.5rem;
+$padding-2: 1rem;
+$padding-3: 1.5rem;
+$padding-4: 2rem;
+$padding-5: 2.5rem;
+$padding-6: 3rem;
+
+// margins
+
+$margin-1: 0.5rem;
+$margin-2: 1rem;
+$margin-3: 1.5rem;
+$margin-4: 2rem;
+$margin-5: 2.5rem;
+$margin-6: 3rem;
+
+// Z-INDEXES //////////////////////////////////
+
+$z-normal: 100;
+$z-tooltip: 1000;
+$z-fixed: 10000;
+
+// BORDER-RADIUS //////////////////////////////////
+
+$b-radius-normal: 0.5rem;
+$b-radius-special: 1rem;
+
+// TRANSITION //////////////////////////////////
+
+$transition-normal: all 0.5s ease-in-out;
+
+// Nav height //////////////////////////////////
+
+$nav-height: 3rem;
+
+// BREAKPOINTS //////////////////////////////////
+
+// Mobile-first (use min-width in the media queries)
+
+// mobile
+$bp-mobile-md: 360px;
+
+$bp-mobile-hr: 576px;
+
+// tablet
+$bp-tablet-sm: 768px;
+
+// laptop
+$bp-laptop-sm: 1024px;
+
+// desktop
+$bp-desktop-sm: 1900px;

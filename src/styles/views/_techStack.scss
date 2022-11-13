@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+.techStack__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: $margin-5;
+
+  .tech-box {
+    @include flex-col-center;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: $margin-1;
+    }
+  }
+}
+
+.stack-title {
+  text-decoration: underline;
+  font-weight: $f-wight-boldd;
+  text-align: center;
+  color: $fco-dark;
+  margin-bottom: $margin-5;
+}

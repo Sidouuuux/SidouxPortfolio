@@ -1,0 +1,48 @@
+@use './variables' as *;
+@use './typography' as *;
+@use './mixins' as *;
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: $f-size-h1;
+  color: $fco-special--dark;
+  margin-bottom: $margin-3;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: $f-size-x-small;
+  font-weight: $f-wight-semi-bold;
+}
+
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+//// media queries
+
+@include minQuery($bp-tablet-sm) {
+  .section {
+    padding-top: 6rem;
+  }
+
+  .section-title {
+    margin-bottom: $margin-5;
+  }
+}

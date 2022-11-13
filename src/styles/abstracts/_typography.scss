@@ -1,0 +1,42 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+//font-family: 'Comfortaa', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// font-family: 'Quicksand', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+// font families
+$font-family-primary: 'Cinzel', cursive;
+$font-family-secondary: 'Cinzel', sans-serif;
+
+// Font-sizes //////////////////////////////////
+$f-size-x-large: 2.5rem;
+$f-size-h1: 1.5rem;
+$f-size-h2: 1.25rem;
+$f-size-h3: 1.125rem;
+$f-size-normal: 0.9rem;
+$f-size-small: 0.8rem;
+$f-size-x-small: 0.75rem;
+
+// Font-weights //////////////////////////////////
+
+$f-wight-light: 300;
+$f-wight-medium: 500;
+$f-wight-semi-bold: 600;
+$f-wight-bold: 700;
+$f-wight-boldd: 1000;
+
+// media queries for root
+
+@include maxQuery($bp-tablet-sm) {
+  $f-size-x-large: 4.5rem;
+  $f-size-h1: 2.25rem;
+  $f-size-h2: 1.5rem;
+  $f-size-h3: 1.25rem;
+  $f-size-normal: 1rem;
+  $f-size-small: 0.875rem;
+  $f-size-x-small: 0.813rem;
+}

@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+// mix media queries
+// call it with @include mQuery() and pass one of the breakpoints
+
+@mixin maxQuery($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin minQuery($bp) {
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin flex-col-center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}

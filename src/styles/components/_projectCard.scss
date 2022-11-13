@@ -1,0 +1,72 @@
+@use '../abstracts/' as *;
+
+.projectsCard__content {
+  
+  background-color: $bgco-dark--lighter;
+  border-radius: $b-radius-normal;
+  border: 0.5rem solid $bgco-dark--lighter;
+  overflow: hidden;
+  box-shadow: $b-shadow-normal;
+}
+
+.projectsCard__content:hover {
+  box-shadow: $b-shadow-normal;
+}
+
+.projectsCard__content:hover .projectsCard__img {
+  transform: scale(1.02);
+}
+
+.projectsCard__img {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.projectsCard__data {
+  padding: $padding-2 $padding-3;
+}
+
+.projectsCard__title {
+  font-size: $f-size-h2;
+  color: $fco-dark;
+  margin-bottom: $margin-2;
+}
+
+.projectsCard__description {
+  font-size: $f-size-small;
+  font-weight: $f-wight-light;
+  color: $fco-light;
+  margin: $margin-2 0;
+}
+
+.projectsCard__technologies {
+  margin-bottom: $margin-3;
+}
+
+.projectsCard__subtitle {
+  font-size: $f-size-normal;
+  color: $fco-dark;
+  margin-bottom: $margin-2;
+}
+
+.projectsCard__techs {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+
+  .projectsCard__tech {
+    font-size: $f-size-x-small;
+    font-weight: $f-wight-light;
+    color: $fco-light;
+    background-color: $bgco-action--primary;
+    padding: 0.25rem $padding-1;
+    border-radius: $b-radius-normal;
+  }
+}
+
+// animations
+
+.flip-in-diag-1-bl {
+  animation: flip-in-diag-1-bl 0.8s 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}

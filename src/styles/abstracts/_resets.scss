@@ -1,0 +1,48 @@
+@use './variables' as *;
+@use './typography' as *;
+@use './mixins' as *;
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-top: $nav-height;
+  font-size: $f-size-normal;
+  font-family: $font-family-secondary;
+  font-weight: $f-wight-medium;
+  background-color: $bgco-light;
+  color: $fco-dark--lighter;
+  line-height: 1.6;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+//// media queries
+
+@include minQuery($bp-tablet-sm) {
+  body {
+    margin: 0;
+  }
+}

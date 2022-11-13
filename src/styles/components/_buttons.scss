@@ -1,0 +1,45 @@
+@use '../abstracts/' as *;
+
+// button on home screen
+.button {
+  display: inline-block;
+  background-color: $bgco-action--primary;
+  color: $fco-light;
+  padding: $padding-2 $padding-3;
+  border-radius: $b-radius-normal;
+  transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+  background-color: $bgco-action--secondary;
+  color: $fco-dark;
+  transform: scale(1.1);
+}
+
+// additional button light
+.button-white {
+  background-color: $bgco-light;
+  color: $fco-dark;
+}
+
+.button-white:hover {
+  background-color: $bgco-light--darker;
+  color: $fco-light;
+  transform: scale(1.1);
+}
+
+.button-link {
+  transition: 0.4s;
+  margin-right: $margin-2;
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    fill: $fco-light;
+  }
+}
+
+.button-link:hover {
+  background: none;
+  transform: scale(1.1);
+}
