@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e852655.css",
-    "main.js": "/static/js/main.c968444a.js",
-    "index.html": "/index.html",
-    "static/media/menu.svg": "/static/media/menu.37d54bbcd3f86911f82053e5de839e50.svg",
-    "main.5e852655.css.map": "/static/css/main.5e852655.css.map",
-    "main.c968444a.js.map": "/static/js/main.c968444a.js.map"
+    "main.css": "/SidouxPortfolio/static/css/main.5e852655.css",
+    "main.js": "/SidouxPortfolio/static/js/main.b8a35d2b.js",
+    "index.html": "/SidouxPortfolio/index.html",
+    "static/media/menu.svg": "/SidouxPortfolio/static/media/menu.37d54bbcd3f86911f82053e5de839e50.svg",
+    "main.5e852655.css.map": "/SidouxPortfolio/static/css/main.5e852655.css.map",
+    "main.b8a35d2b.js.map": "/SidouxPortfolio/static/js/main.b8a35d2b.js.map"
   },
   "entrypoints": [
     "static/css/main.5e852655.css",
-    "static/js/main.c968444a.js"
+    "static/js/main.b8a35d2b.js"
   ]
 }
