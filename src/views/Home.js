@@ -131,7 +131,7 @@ const Home = () => {
         </div>
 
         <div className="home__data fade-in">
-          <span className="home__greeting">Hello ! I'm</span>
+          <span className="home__greeting"><br/>Hello ! I'm</span>
           <h1 className="home__name tracking-in-expand-fwd">Sid-Ahmed MIR</h1>
           <span className="home__profession">Blockchain Developer</span>
           <span className="home__location">Based in Paris, France</span>
