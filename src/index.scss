@@ -1,3 +1,7 @@
+
 @use './styles/abstracts/' as *;
 @use './styles/views/' as *;
 @use './styles/components' as *;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

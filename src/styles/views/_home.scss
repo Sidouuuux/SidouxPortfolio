@@ -3,8 +3,13 @@
 .home {
   background-color: $bgco-dark;
   overflow: hidden;
+  height: 100vh;
+
 }
 
+.sidoux{
+  backdrop-filter: blur(5px);
+}
 .home__container {
   position: relative;
   height: calc(100vh - $nav-height);
@@ -25,76 +30,21 @@
     mask {
       animation: fill-animate 2s ease-in-out forwards 0s;
     }
-
-    // P - 1
-    path:nth-child(2) {
-      stroke-dasharray: 279;
-      stroke-dashoffset: 279;
-      animation: stroke-animate 2s ease forwards;
-    }
-
-    // O
-    path:nth-child(3) {
-      stroke-dasharray: 171px;
-      stroke-dashoffset: 171px;
-      animation: stroke-animate 2s ease forwards 0.3s;
-    }
-
-    // R
-    path:nth-child(4) {
-      stroke-dasharray: 204px;
-      stroke-dashoffset: 204px;
-      animation: stroke-animate 2s ease forwards 0.6s;
-    }
-
-    // T
-    path:nth-child(5) {
-      stroke-dasharray: 219px;
-      stroke-dashoffset: 219px;
-      animation: stroke-animate 2s ease forwards 0.9s;
-    }
-    // F
-    path:nth-child(6) {
-      stroke-dasharray: 341px;
-      stroke-dashoffset: 341px;
-      animation: stroke-animate 2s ease forwards 1.2s;
-    }
-    // O
-    path:nth-child(7) {
-      stroke-dasharray: 171px;
-      stroke-dashoffset: 171px;
-      animation: stroke-animate 2s ease forwards 1.5s;
-    }
-    // L
-    path:nth-child(8) {
-      stroke-dasharray: 341px;
-      stroke-dashoffset: 341px;
-      animation: stroke-animate 2s ease forwards 1.8s;
-    }
-    // I
-    path:nth-child(9) {
-      stroke-dasharray: 279px;
-      stroke-dashoffset: 279px;
-      animation: stroke-animate 2s ease forwards 2.1s;
-    }
-    // O
-    path:nth-child(10) {
-      stroke-dasharray: 171px;
-      stroke-dashoffset: 171px;
-      animation: stroke-animate 2s ease forwards 2.4s;
-    }
   }
 }
 
 .home__data {
   color: $fco-light;
   z-index: $z-tooltip;
+  text-align: center;
   @include flex-col-center;
 }
 
 .home__name {
   font-size: 5rem;
   color: $fco-dark;
+  text-shadow: 0 0 0.125em hsl(0, 0%, 100%, 0.3), 0 0 0.45em currentColor;
+
 }
 
 .home__profession,
@@ -135,7 +85,7 @@
   svg {
     width: 1.3rem;
     height: 1.3rem;
-    fill: $bgco-action--primary;
+    fill: #FFC343;
   }
 }
 
@@ -194,10 +144,71 @@
 }
 
 .tracking-in-expand-fwd {
-  animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s
+  animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s
     both;
 }
 
 .fade-in {
-  animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both 3s;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.25s;
+}
+
+//////////////////
+.absolute {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  height: 100vh;
+
+}
+
+
+.left {
+  width: 50%;
+  height: 100vh;
+
+  backdrop-filter: blur(50px);
+  border-right: 1px solid #FFCB5C;
+  animation: slideLeft 2.5s forwards 0.5s;
+
+  background-image: url("../../assets/icons/left.svg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+
+  background-position: 150% 50%;
+  background-size: 50%;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+
+  backdrop-filter: blur(50px);
+  border-left: 1px solid #FFCB5C;
+  animation: slideRight 2.5s forwards 0.5s;
+  background-image: url("../../assets/icons/right.svg");
+  background-repeat: no-repeat;
+  background-position: -50% 50%;
+  background-size: 50%;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }
