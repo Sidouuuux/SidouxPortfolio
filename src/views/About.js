@@ -33,13 +33,13 @@ const About = () => {
               GM !
               <br />
             </span>
-            With 5 years of experience as a Blockchain developer, I acquired a solid knowledge of Blockchain and Dapp
+            With 5+ years of experience as a Blockchain developer, I acquired a solid knowledge of Blockchain and Dapp
             development.<br />
             I am currently looking for a job as a Blockchain developer.
           </p>
           <div>
             <span className="about__number">5+ years</span>
-            <span className="about__achievement">Web Dev Experience</span>
+            <span className="about__achievement">Blockchain Experience</span>
           </div>
           {/* <div>
             <span className="about__number">10+ techs</span>

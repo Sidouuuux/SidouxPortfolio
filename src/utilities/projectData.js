@@ -46,16 +46,7 @@ export const projectData = [
     img: '/img/screenshots/nooto.png',
     deployment: 'https://nooto-drinks.com/',
   },
-  // {
-  //   projectName: 'Blocky',
-  //   description:
-  //     'NFT real estate DApp built on Tezos with a NextJS front and a Middleware with Taquito. The smart contracts were developed with PascaLigo. We use a PostgreSQL database.',
-  //   technologies: ['Tezos', 'Next.js'],
-  //   category: 'SPA',
-  //   img: '/img/screenshots/Dictionary.png',
-  //   gitHub: 'https://github.com/GiulianoMarcoMontis/dictionary-react',
-  //   deployment: 'https://dictionary-react-eight.vercel.app',
-  // },
+  
   {
     projectName: 'Comma',
     description:

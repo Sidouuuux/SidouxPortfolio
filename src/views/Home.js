@@ -53,7 +53,7 @@ const Home = () => {
         <div className="home__container bd-container ">
 
           <div className="home__data fade-in">
-            <span className="home__greeting"><br />Hello ! I'm</span>
+            {/* <span className="home__greeting"><br />Hello ! I'm</span> */}
             <h1 className="home__name tracking-in-expand-fwd">Sid-Ahmed MIR</h1>
             <span className="home__profession">Blockchain Developer</span>
             <span className="home__location">Based in Dubaï, UAE</span>
@@ -94,7 +94,7 @@ const Home = () => {
 
             </div>
             <div className="downloads">
-              <a download href="/cv/Sid-Ahmed_MIR_Resume.pdf" className="button">
+              <a download href="/cv/Sid-Ahmed_MIR_Resume_and_CoverLetter.pdf" className="button">
                 Download CV
               </a>
             </div>
