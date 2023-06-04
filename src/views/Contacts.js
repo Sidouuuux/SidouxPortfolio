@@ -21,7 +21,7 @@ const Contacts = () => {
             </svg>
             <h3 className="contacts__title">Location</h3>
             <span className="contacts__description">
-              Remote - Paris - France
+              Remote - Dubaï - UAE
             </span>
           </div>
 
