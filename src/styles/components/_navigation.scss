@@ -93,7 +93,7 @@
 @include maxQuery($bp-tablet-sm) {
   .nav__menu {
     position: fixed;
-    top: -100%;
+    top: -900%;
     left: 0;
     width: 100%;
     padding-top: $padding-3;

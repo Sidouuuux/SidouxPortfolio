@@ -41,7 +41,8 @@
 }
 
 .home__name {
-  font-size: 5rem;
+  padding-top: 20%;
+  font-size: 3rem;
   color: $fco-dark;
   text-shadow: 0 0 0.125em hsl(0, 0%, 100%, 0.3), 0 0 0.45em currentColor;
 
@@ -160,6 +161,7 @@
   height: 100%;
   z-index: 10000;
   height: 100vh;
+  animation: abs 2.5s forwards 0.5s;
 
 }
 
@@ -210,5 +212,15 @@
   to {
     transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+@keyframes abs {
+  from {
+    // transform: translateX(0);
+  }
+  to {
+    // transform: translateX(100%);
+    z-index: 0;
   }
 }

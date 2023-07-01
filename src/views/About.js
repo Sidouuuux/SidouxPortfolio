@@ -16,10 +16,10 @@ const About = () => {
       id="about"
       data-aos="fade-down"
     >
-      <div>
+      {/* <div>
         <span className="section-subtitle">Who am I ?</span>
         <h2 className="section-title">About me</h2>
-      </div>
+      </div> */}
 
       <div className="about__container bd-grid">
         <img

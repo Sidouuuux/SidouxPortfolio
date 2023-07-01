@@ -4,12 +4,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container bd-container">
         <h1 className="footer__title">Sid-Ahmed MIR</h1>
-        <p className="footer__description">
-          I am Sid-Ahmed and this is my portfolio website. <br />
-          You can reach out to me here !
-        </p>
-
-        <div className="footer__social">
+        <div className="flex footer__social">
           <a
             href="https://github.com/Sidouuuux"
             className="footer__social-icon"
