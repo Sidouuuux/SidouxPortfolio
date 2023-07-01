@@ -2,11 +2,14 @@
 
 .projectsCard__content {
   
-  background-color: $bgco-dark--lighter;
   border-radius: $b-radius-normal;
-  border: 0.5rem solid $bgco-dark--lighter;
   overflow: hidden;
-  box-shadow: $b-shadow-normal;
+background: rgba(255, 255, 255, 0.148);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .projectsCard__content:hover {

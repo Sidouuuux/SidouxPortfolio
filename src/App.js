@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import AnimatedCursor from "react-animated-cursor"
@@ -18,8 +18,34 @@ import Projects from './views/Projects';
 import Contacts from './views/Contacts';
 import Footer from './views/Footer';
 // import NotFound from './views/NotFound';
+import BIRDS from "vanta/dist/vanta.fog.min";
+import * as THREE from "three";
 
 const App = () => {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const vantaRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        BIRDS({
+          el: vantaRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          highlightColor: 0x17003D,
+          midtoneColor: 0x17003D,
+          lowlightColor: 0x17003D,
+          baseColor: 0x7200ff,
+          blurFactor: 0.67,
+          speed: 0.00,
+          zoom: 1.40
+        })
+      );
+    }
+  }, [vantaEffect]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -46,20 +72,26 @@ const App = () => {
           'button',
           '.link'
         ]}
-        style={{zIndex:10000000,
-        position: "fixed"}}
+        style={{
+          zIndex: 10000000,
+          position: "fixed"
+        }}
       />
       <Navigation />
-      <main className="l-main">
+      <main className="l-main"  ref={vantaRef}>
         <Home />
-        <About />
-        <Qualifications />
-        {/* <Skills /> */}
-        <TechStack />
-        <Projects />
-        {/* <Design /> */}
-        <Contacts />
-        <Footer />
+        <div className='bg-transparent'>
+
+          <About />
+          <Qualifications />
+          {/* <Skills /> */}
+          <TechStack />
+          <Projects />
+          {/* <Design /> */}
+          <Contacts />
+          <Footer />
+        </div>
+
       </main>
     </div>
   );

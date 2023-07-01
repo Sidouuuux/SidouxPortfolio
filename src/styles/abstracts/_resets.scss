@@ -24,7 +24,7 @@ body {
   background-color: $bgco-light;
   color: $fco-dark--lighter;
   line-height: 1.6;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

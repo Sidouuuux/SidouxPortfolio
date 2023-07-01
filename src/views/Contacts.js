@@ -2,7 +2,7 @@ const Contacts = () => {
   return (
     <section className="contacts section bd-container bd-grid" id="contacts">
       <div>
-        <span className="section-subtitle">Looking for a developer ?</span>
+        {/* <span className="section-subtitle">Looking for a developer ?</span> */}
         <h2 className="section-title">Contact me !</h2>
       </div>
 
@@ -62,7 +62,7 @@ const Contacts = () => {
             </svg>
             <h3 className="contacts__title">Online</h3>
             <span className="contacts__description">More information at:</span>
-            <div className="contacts__social">
+            <div className="flex contacts__social">
               <a
                 href="https://www.linkedin.com/in/sid-ahmed-mir-12426b163/"
                 className="contacts__social-icon"

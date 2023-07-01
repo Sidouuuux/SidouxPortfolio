@@ -2,7 +2,7 @@ const TechStack = (props) => {
   return (
     <section className="techStack section bd-container" id="about">
       <div>
-        <span className="section-subtitle">My tech stack</span>
+        {/* <span className="section-subtitle">My tech stack</span> */}
         <h2 className="section-title">Technologies</h2>
       </div>
 

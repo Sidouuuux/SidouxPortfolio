@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <section className="projects section bd-container bd-grid" id="projects">
       <div>
-        <span className="section-subtitle">My Projects</span>
+        {/* <span className="section-subtitle">My Projects</span> */}
         <h2 className="section-title">Projects</h2>
       </div>
 
