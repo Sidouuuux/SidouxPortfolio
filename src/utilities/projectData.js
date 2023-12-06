@@ -39,6 +39,14 @@ export const projectData = [
     deployment: 'https://www.elevenup.net/',
   },
   {
+    projectName: 'Ekster Wallet NFT Collection',
+    description:
+      'Creation of an NFT collection linked to a physical wallet with a minting page in NextJS,Middleware in EthersJS and smart contracts in Solidity. Deployed on Polygon.',
+    technologies: ['Ethereum', 'Solidity', 'React.js', 'TailwindCSS'],
+    img: '/img/screenshots/Ekster.png',
+    deployment: 'https://www.ekster.com/en-eu/products/artlanta-x-ekster',
+  },
+  {
     projectName: 'Nooto Drinks',
     description:
       'Creation of an NFT collection with a minting page in NextJS, deploying on-chain using Metaplex protocol with Sugar CLI. The collection has a whitelist, airdrop and reveals features. Deployed on Solana.',
@@ -46,7 +54,7 @@ export const projectData = [
     img: '/img/screenshots/nooto.png',
     deployment: 'https://nooto-drinks.com/',
   },
-  
+
   {
     projectName: 'Comma',
     description:

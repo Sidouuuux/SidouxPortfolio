@@ -38,10 +38,10 @@ const App = () => {
           highlightColor: 0x17003D,
           midtoneColor: 0x17003D,
           lowlightColor: 0x17003D,
-          baseColor: 0x7200ff,
-          blurFactor: 0.67,
-          speed: 0.00,
-          zoom: 1.40
+          baseColor: 0x6C0AFF,
+          blurFactor: 0.40,
+          speed: 0.7,
+          zoom: 1.0
         })
       );
     }
@@ -78,7 +78,7 @@ const App = () => {
         }}
       />
       <Navigation />
-      <main className="l-main"  ref={vantaRef}>
+      <main className="l-main" ref={vantaRef}>
         <Home />
         <div className='bg-transparent'>
 

@@ -4,29 +4,29 @@ import * as THREE from "three";
 
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
-  const vantaRef = useRef(null);
+  // const vantaRef = useRef(null);
 
   useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        BIRDS({
-          el: vantaRef.current,
-          THREE: THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x17003D,
-          shininess: 50.00,
-          waveHeight: 21.50,
-          waveSpeed: 0.75,
-          zoom: 1.7
-        })
-      );
-    }
+    // if (!vantaEffect) {
+    //   setVantaEffect(
+    //     BIRDS({
+    //       el: vantaRef.current,
+    //       THREE: THREE,
+    //       mouseControls: true,
+    //       touchControls: true,
+    //       gyroControls: false,
+    //       minHeight: 200.00,
+    //       minWidth: 200.00,
+    //       scale: 1.00,
+    //       scaleMobile: 1.00,
+    //       color: 0x17003D,
+    //       shininess: 50.00,
+    //       waveHeight: 21.50,
+    //       waveSpeed: 0.75,
+    //       zoom: 1.7
+    //     })
+    //   );
+    // }
     const container = document.querySelector('.absolute');
     const leftDiv = document.querySelector('.left');
     const rightDiv = document.querySelector('.right');
@@ -37,14 +37,15 @@ const Home = () => {
 
     leftDiv.addEventListener('animationend', handleAnimationEnd);
     rightDiv.addEventListener('animationend', handleAnimationEnd);
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-      leftDiv.removeEventListener('animationend', handleAnimationEnd);
-      rightDiv.removeEventListener('animationend', handleAnimationEnd);
-    };
+    // return () => {
+    //   if (vantaEffect) vantaEffect.destroy();
+    //   leftDiv.removeEventListener('animationend', handleAnimationEnd);
+    //   rightDiv.removeEventListener('animationend', handleAnimationEnd);
+    // };
   }, [vantaEffect]);
   return (
-    <section className="home" id="home" ref={vantaRef}>
+    // <section className="home" id="home" ref={vantaRef}>
+    <section className="home" id="home">
       <div className="absolute">
         <div className='left'></div>
         <div className='right'></div>
@@ -94,7 +95,7 @@ const Home = () => {
 
             </div>
             <div className="downloads">
-              <a download href="/cv/Sid-Ahmed_MIR_Resume_and_CoverLetter.pdf" className="button">
+              <a download href="/cv/Sid-Ahmed_MIR_Resume_CoverLetter.pdf" className="button">
                 Download CV
               </a>
             </div>

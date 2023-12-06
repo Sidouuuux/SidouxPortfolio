@@ -5,7 +5,7 @@ const About = () => {
   // Animations on slide init
   Aos.init({
     offset: 200,
-    duration: 600,
+    duration: 10,
     easing: 'ease-in-sine',
     delay: 200,
   });

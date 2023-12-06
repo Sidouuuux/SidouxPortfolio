@@ -21,7 +21,7 @@ const Contacts = () => {
             </svg>
             <h3 className="contacts__title">Location</h3>
             <span className="contacts__description">
-              Remote - Dubaï - UAE
+              Remote - Paris - France
             </span>
           </div>
 
@@ -44,7 +44,7 @@ const Contacts = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                mirsidahmed@hotmail.fr
+                <u>mirsidahmed@hotmail.fr</u>
               </a>
             </span>
           </div>
