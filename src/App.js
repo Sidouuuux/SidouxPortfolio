@@ -1,29 +1,24 @@
 import React, { useState, useEffect, useRef } from "react";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import AnimatedCursor from "react-animated-cursor"
+import AnimatedCursor from "react-animated-cursor";
+import BIRDS from "vanta/dist/vanta.fog.min";
+import * as THREE from "three";
 
-// components
+// Components
 import Navigation from './components/Navigation';
-
-// views
 import Home from './views/Home';
-
 import About from './views/About';
 import Qualifications from './views/Qualifications';
 import TechStack from './views/TechStack';
-// import Skills from './views/Skills';
 import Projects from './views/Projects';
-// import Design from './views/Design';
 import Contacts from './views/Contacts';
 import Footer from './views/Footer';
-// import NotFound from './views/NotFound';
-import BIRDS from "vanta/dist/vanta.fog.min";
-import * as THREE from "three";
 
 const App = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
+
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -46,6 +41,7 @@ const App = () => {
       );
     }
   }, [vantaEffect]);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -81,16 +77,12 @@ const App = () => {
       <main className="l-main" ref={vantaRef}>
         <Home />
         <div className='bg-transparent'>
-
           <About />
           <Qualifications />
-          {/* <Skills /> */}
           <TechStack />
           <Projects />
-          {/* <Design /> */}
           <Contacts />
         </div>
-
       </main>
     </div>
   );

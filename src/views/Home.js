@@ -1,32 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import BIRDS from "vanta/dist/vanta.waves.min";
-import * as THREE from "three";
 
 const Home = () => {
-  const [vantaEffect, setVantaEffect] = useState(0);
-  // const vantaRef = useRef(null);
 
   useEffect(() => {
-    // if (!vantaEffect) {
-    //   setVantaEffect(
-    //     BIRDS({
-    //       el: vantaRef.current,
-    //       THREE: THREE,
-    //       mouseControls: true,
-    //       touchControls: true,
-    //       gyroControls: false,
-    //       minHeight: 200.00,
-    //       minWidth: 200.00,
-    //       scale: 1.00,
-    //       scaleMobile: 1.00,
-    //       color: 0x17003D,
-    //       shininess: 50.00,
-    //       waveHeight: 21.50,
-    //       waveSpeed: 0.75,
-    //       zoom: 1.7
-    //     })
-    //   );
-    // }
+   
     const container = document.querySelector('.absolute');
     const leftDiv = document.querySelector('.left');
     const rightDiv = document.querySelector('.right');
@@ -37,14 +14,9 @@ const Home = () => {
 
     leftDiv.addEventListener('animationend', handleAnimationEnd);
     rightDiv.addEventListener('animationend', handleAnimationEnd);
-    // return () => {
-    //   if (vantaEffect) vantaEffect.destroy();
-    //   leftDiv.removeEventListener('animationend', handleAnimationEnd);
-    //   rightDiv.removeEventListener('animationend', handleAnimationEnd);
-    // };
-  }, [vantaEffect]);
+    
+  }, []);
   return (
-    // <section className="home" id="home" ref={vantaRef}>
     <section className="home" id="home">
       <div className="absolute">
         <div className='left'></div>
@@ -57,7 +29,7 @@ const Home = () => {
             {/* <span className="home__greeting"><br />Hello ! I'm</span> */}
             <h1 className="home__name tracking-in-expand-fwd">Sid-Ahmed MIR</h1>
             <span className="home__profession">Blockchain Developer</span>
-            <span className="home__location">Based in Dubaï, UAE</span>
+            <span className="home__location">Based in Paris, France</span>
 
             <div className="home__social">
               <a
