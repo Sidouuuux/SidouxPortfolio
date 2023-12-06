@@ -28,16 +28,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 1em;
+  width: 0.5em;
 }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: $fco-dark;
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 0.5em;
 
 }
 
